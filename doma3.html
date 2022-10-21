@@ -10,9 +10,109 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body {
+        background-image: url(sea-edge.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
     <title>Domaća zadaća 3</title>
   </head>
   <body style="font-family: 'Noto Sans', sans-serif">
-    <a href="./index.html">Vrati se na početnu</a>
+    <a href="./index.html">Vrati se na početnu</a><br /><br /><br />
+    <form>
+      <p>Osobni podatci:</p>
+      <br />
+      <label for="ime">Ime:</label><br />
+      <input type="text" id="ime" name="ime" /><br />
+      <label for="prezime">Prezime:</label><br />
+      <input type="text" id="prezime" name="prezime" /><br />
+      <label for="godine">Godine:</label><br />
+      <input type="text" id="godine" name="godine" size="4" /><br /><br />
+
+      <p>Profilna slika</p>
+      <label for="myfile">Učitajte datoteku:</label><br /><br />
+      <input type="file" id="myfile" name="myfile" /><br /><br /><br />
+
+      <p>Spol:</p>
+      <br />
+      <input type="radio" name="spol" id="spolMusko" value="M" />
+      <label for="spolMusko">Muško</label><br />
+      <input type="radio" name="spol" id="spolZensko" value="Z" />
+      <label for="spolZensko">Žensko</label><br />
+      <input type="radio" name="spol" id="spolNedefinirano" value="N" />
+      <label for="spolNedefinirano">Nedefinirano</label><br /><br /><br />
+
+      <p>Kada ste rođeni ?</p>
+      <label for="datum">Datum rođenja:</label>
+      <input type="date" id="datum" name="datum" /><br /><br /><br />
+
+      <p>Upišite svoj e-mail:</p>
+      <label for="email">Vaš e-mail:</label>
+      <input type="email" id="email" name="email" /><br /><br /><br />
+
+      <p>Website</p>
+      <label for="website">Vaš website:</label>
+      <input type="url" id="website" name="website" /><br /><br /><br />
+
+      <p>Što najčešće vozite od navedenih vozila ?</p>
+      <input type="checkbox" id="vozilo1" name="vozilo" value="auto" />
+      <label for="vozilo1"> Auto</label><br />
+      <input type="checkbox" id="vozilo2" name="vozilo" value="bicikl" />
+      <label for="vozilo2"> Bicikl</label><br />
+      <input type="checkbox" id="vozilo3" name="vozilo" value="romobil" />
+      <label for="vozilo3"> Romobil</label><br />
+      <input type="checkbox" id="vozilo4" name="vozilo" value="motor" />
+      <label for="vozilo4"> Motor/Skuter</label><br /><br /><br />
+
+      <label for="boja">Najdraža boja:</label><br /><br />
+      <select id="boja" name="boja">
+        <optgroup label="Tople boje">
+          <option value="crvena">Crvena</option>
+          <option value="narančasta">Narančasta</option>
+          <option value="žuta">Žuta</option>
+        </optgroup>
+        <optgroup label="Hladne boje">
+          <option value="plava">Plava</option>
+          <option value="zelena">Zelena</option>
+          <option value="ljubičasta">Ljubičasta</option>
+        </optgroup>
+        <optgroup label="Neutralne boje">
+          <option value="crna">Crna</option>
+          <option value="bijela">Bijela</option>
+          <option value="siva">Siva</option>
+        </optgroup>
+      </select>
+      <br /><br />
+
+      <p>Nešto o sebi:</p>
+      <textarea
+        name="message"
+        style="width: 300px; height: 150px; background-color: rgb(75, 218, 236)"
+      >
+Prostor za unos poruke</textarea
+      ><br /><br />
+
+      <label for="godišnjadoba">Najdraže godišnje doba:</label><br /><br />
+      <select id="godišnjadoba" name="godišnjadoba">
+        <option value="proljeće">Proljeće</option>
+        <option value="ljeto" selected>Ljeto</option>
+        <option value="jesen">Jesen</option>
+        <option value="zima">Zima</option></select
+      ><br /><br /><br />
+
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option></datalist
+      ><br /><br /><br />
+
+      <input type="submit" value="Predaj upitnik" />
+    </form>
   </body>
 </html>
