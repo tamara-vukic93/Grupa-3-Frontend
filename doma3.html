@@ -31,10 +31,12 @@
       <input type="text" id="prezime" name="prezime" /><br />
       <label for="godine">Godine:</label><br />
       <input type="text" id="godine" name="godine" size="4" /><br /><br />
+      <hr />
 
       <p>Profilna slika</p>
       <label for="myfile">Učitajte datoteku:</label><br /><br />
       <input type="file" id="myfile" name="myfile" /><br /><br /><br />
+      <hr />
 
       <p>Spol:</p>
       <br />
@@ -43,19 +45,23 @@
       <input type="radio" name="spol" id="spolZensko" value="Z" />
       <label for="spolZensko">Žensko</label><br />
       <input type="radio" name="spol" id="spolNedefinirano" value="N" />
-      <label for="spolNedefinirano">Nedefinirano</label><br /><br /><br />
+      <label for="spolNedefinirano">Nedefinirano</label><br /><br />
+      <hr />
 
       <p>Kada ste rođeni ?</p>
       <label for="datum">Datum rođenja:</label>
       <input type="date" id="datum" name="datum" /><br /><br /><br />
+      <hr />
 
       <p>Upišite svoj e-mail:</p>
       <label for="email">Vaš e-mail:</label>
       <input type="email" id="email" name="email" /><br /><br /><br />
+      <hr />
 
       <p>Website</p>
       <label for="website">Vaš website:</label>
       <input type="url" id="website" name="website" /><br /><br /><br />
+      <hr />
 
       <p>Što najčešće vozite od navedenih vozila ?</p>
       <input type="checkbox" id="vozilo1" name="vozilo" value="auto" />
@@ -65,7 +71,8 @@
       <input type="checkbox" id="vozilo3" name="vozilo" value="romobil" />
       <label for="vozilo3"> Romobil</label><br />
       <input type="checkbox" id="vozilo4" name="vozilo" value="motor" />
-      <label for="vozilo4"> Motor/Skuter</label><br /><br /><br />
+      <label for="vozilo4"> Motor/Skuter</label><br /><br />
+      <hr />
 
       <label for="boja">Najdraža boja:</label><br /><br />
       <select id="boja" name="boja">
@@ -86,6 +93,7 @@
         </optgroup>
       </select>
       <br /><br />
+      <hr />
 
       <p>Nešto o sebi:</p>
       <textarea
@@ -94,6 +102,7 @@
       >
 Prostor za unos poruke</textarea
       ><br /><br />
+      <hr />
 
       <label for="godišnjadoba">Najdraže godišnje doba:</label><br /><br />
       <select id="godišnjadoba" name="godišnjadoba">
@@ -101,16 +110,55 @@ Prostor za unos poruke</textarea
         <option value="ljeto" selected>Ljeto</option>
         <option value="jesen">Jesen</option>
         <option value="zima">Zima</option></select
-      ><br /><br /><br />
+      ><br /><br />
+      <hr />
 
+      <p>Izaberite web preglednik:</p>
       <input list="browsers" name="browser" />
       <datalist id="browsers">
-        <option value="Internet Explorer"></option>
-        <option value="Firefox"></option>
         <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="OperaGX"></option>
         <option value="Opera"></option>
         <option value="Safari"></option></datalist
-      ><br /><br /><br />
+      ><br /><br />
+      <hr />
+
+      <label for="vol"></label>
+      0
+      <input type="range" id="vol" name="vol" min="0" max="100" />
+      100
+      <br /><br /><br />
+      <hr />
+
+      <p>Boja kose:</p>
+      <label for="boja kose">Odaberi boju svoje kose:</label>
+      <input
+        type="color"
+        id="boja kose"
+        name="boja kose"
+        value="#ff0000"
+      /><br /><br /><br />
+      <hr />
+
+      <p>Koliko ti se sviđa ova stranica ?</p>
+      <label for="quantity"></label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        max="5"
+      /><br /><br />
+      <hr />
+
+      <label for="gsearch">Search Google:</label>
+      <input type="search" id="gsearch" name="gsearch" /><br /><br />
+      <hr />
+
+      <label for="appt">Koliko je sati:</label>
+      <input type="time" id="appt" name="appt" /><br /><br />
+      <hr />
 
       <input type="submit" value="Predaj upitnik" />
     </form>
