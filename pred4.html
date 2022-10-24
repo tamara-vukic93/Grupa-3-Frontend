@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Multimedija</title>
+  </head>
+  <body
+    style="
+      background-color: rgb(107, 225, 225);
+      font-family: 'Noto Sans', sans-serif;
+    "
+  >
+    <a href="./index.html">Vrati se na početnu</a><br /><br />
+    <!--Unos slika različitih formata-->
+    <h3>Hajdukov grb - jpg format</h3>
+    <img
+      style="width: 300px"
+      src="https://www.njuskalo.hr/image-w920x690/navijacki-rekviziti/hajduk-split-naljepnica-grb-slika-125304895.jpg"
+      alt="Grb Hajduka"
+    />
+    <h3>Dinamov grb - png format</h3>
+    <img style="width: 300px" src="./multimedija/dinamo.png" alt="Grb Dinama" />
+    <h3>Objašnjenje picturei figure tag-a</h3>
+    <figure>
+      <picture>
+        <source
+          media="(min-width:800px)"
+          srcset="
+            https://www.vecernji.hr/media/img/6a/b5/19beae9b11ae88540727.jpeg
+          "
+        />
+        <source
+          media="(min-width:400px)"
+          srcset="
+            https://www.vecernji.hr/media/img/3d/d0/6c57bc8609cac5f3a34b.jpeg
+          "
+        />
+        <img
+          src="https://www.vecernji.hr/media/img/6a/b5/19beae9b11ae88540727.jpeg"
+        />
+      </picture>
+      <figcaption>
+        Gužva na benzinskim pumpama jer je sve poskupilo i neće skoro biti više
+      </figcaption>
+    </figure>
+  </body>
+</html>
