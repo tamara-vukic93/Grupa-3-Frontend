@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>SVG, Canvas, video, audio</title>
+  </head>
+  <body style="font-family: 'Noto Sans', sans-serif">
+    <a href="./index.html">Vrati se na početnu</a><br /><br />
+    <!--SVG primjer-->
+    <h3>SVG primjer</h3>
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(255, 255, 0); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 0, 0); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">
+        SVG
+      </text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <br />
+    <!-- Canvas vježba -->
+    <h3>Canvas primjeri</h3>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the HTML canvas tag.</canvas
+    >
+    <canvas
+      id="myCanvas1"
+      width="210"
+      height="250"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the HTML canvas tag.</canvas
+    >
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      kriz(15, -15);
+
+      function kriz(odmakX, odmakY) {
+        ctx.moveTo(0 + odmakX, 0 + odmakY);
+        ctx.lineTo(200 + odmakX, 100 + odmakY);
+        ctx.moveTo(200 + odmakX, 0 + odmakY);
+        ctx.lineTo(0 + odmakX, 100 + odmakY);
+        ctx.stroke();
+      }
+
+      var c1 = document.getElementById("myCanvas1");
+      var ctx1 = c1.getContext("2d");
+      ctx1.beginPath();
+      ctx1.arc(50, 70, 50, Math.PI, 2 * Math.PI);
+      ctx1.stroke();
+      ctx1.beginPath();
+      ctx1.arc(150, 70, 50, 0, Math.PI);
+      ctx1.stroke();
+
+      ctx1.beginPath();
+      ctx1.strokeStyle = "#FF0000";
+      ctx1.moveTo(0, 180);
+      ctx1.lineTo(200, 180);
+      ctx1.stroke();
+      ctx1.arc(50, 180, 50, 0, Math.PI);
+      ctx1.arc(150, 180, 50, Math.PI, 2 * Math.PI);
+      ctx1.stroke();
+    </script>
+    <br />
+    <!-- Audio -->
+    <h3>Audio file</h3>
+    <audio controls muted preload="metadata">
+      <source
+        src="./multimedija/Asking Alexandria   into the fire Audio Oficial.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="./multimedija/Asking Alexandria   into the fire Audio Oficial (32kbps).mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <br />
+    <!-- Video -->
+    <h3>Video file</h3>
+    <video
+      controls
+      muted
+      preload="metadata"
+      poster="./multimedia/SmartSize.webp"
+    >
+      <source
+        src="./multimedija/I Prevail - Bow Down (Official Music Video).mp4"
+        type="video/mp4"
+      />
+    </video>
+  </body>
+</html>
