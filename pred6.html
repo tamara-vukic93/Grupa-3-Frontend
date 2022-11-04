@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #kratica1 {
+        position: relative;
+      }
+    </style>
+    <script>
+      var stvoren = false;
+      var prikazan = false;
+      function toggle(event) {
+        if (!stvoren && event.type == "mouseenter") {
+          var tag = document.createElement("span");
+          tag.innerHTML = "Svjetska zdravstvena organizacija";
+          tag.setAttribute("id", "objasnjenje");
+          tag.style.position = "absolute";
+          tag.style.minWidth = "max-content";
+          tag.style.backgroundColor = "teal";
+          tag.style.top = "-20px";
+          tag.style.left = "-40px";
+          event.target.appendChild(tag);
+          stvoren = true;
+          prikazan = true;
+        } else if (!prikazan && event.type == "mouseenter") {
+          document.getElementById("objasnjenje").style.display = "";
+          prikazan = true;
+        }
+        if (stvoren && event.type == "mouseleave") {
+          document.getElementById("objasnjenje").style.display = "none";
+          prikazan = false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      Marking up abbreviations can give useful information to browsers,
+      translation systems and search-engines The
+      <span
+        onmouseleave="toggle(event)"
+        onmouseenter="toggle(event)"
+        id="kratica1"
+        >WHO</span
+      >
+      was founded in 1948.
+    </p>
+  </body>
+</html>
+Footer © 2022 GitHub, Inc. Footer navigation Terms Privacy Security Status
