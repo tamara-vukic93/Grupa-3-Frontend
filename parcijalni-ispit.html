@@ -144,11 +144,17 @@
         </p>
         <form action="#" method="GET">
           <label for="imeiprezime">Ime i prezime:</label><br />
-          <input type="text" name="imeiprezime" id="imeiprezime" /><br />
+          <input
+            type="text"
+            name="imeiprezime"
+            id="imeiprezime"
+            required
+          /><br />
           <label for="email">Unesite svoju email adresu:</label><br />
-          <input type="email" name="email" id="email" /><br />
+          <input type="email" name="email" id="email" required /><br />
           <label for="poruka">Poruka:</label><br />
-          <textarea name="sadrzaj" cols="200" rows="5"></textarea><br />
+          <textarea name="sadrzaj" cols="200" rows="5" required></textarea
+          ><br />
           <input type="submit" value="Pošalji poruku" />
         </form>
       </section>
