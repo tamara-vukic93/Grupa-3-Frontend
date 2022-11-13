@@ -2,20 +2,24 @@ body {
     color: #40514E;
     margin: 0;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Crete Round', serif;
 }
 
 h1 {
     font-size: 5.625rem;
+    font-family: 'Montserrat', sans-serif;
     margin: 50px auto 0 auto;
     color: #66BFBF;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px #1b488b;
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #66BFBF;
+    color: rgb(102, 191, 191);
     font-weight: normal;
     padding-bottom: 10px;
+    text-shadow: 3px 3px 5px rgb(163, 27, 118);
 }
 
 h3 {
@@ -24,6 +28,8 @@ h3 {
 
 p {
     line-height: 2;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
 }
 
 a {
@@ -37,13 +43,13 @@ a:hover {
 }
 
 hr {
-    border: dotted #EAF6F6 6px;
+    border: dotted rgb(234, 246, 246) 6px;
     border-bottom: none;
     width: 4%;
     margin: 100px auto;
 }
 
-.profile-pic {
+#profile-pic {
     height: 200px;
 }
 
