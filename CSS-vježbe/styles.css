@@ -1,35 +1,44 @@
 .green {
-    border: 100px solid green;
-    display: inline-block;
-    width: 100px;
+    border: 5px solid black;
+    background-color: green;
+    width: 150px;
+    height: 150px;
 }
 
 .blue {
-    border: 200px solid blue;
-    display: inline-block;
+    border: 5px solid black;
+    background-color: blue;
     position: absolute;
-    left: 550px;
-    top: 520px;
-    width: 300px;
+    left: 35vw;
+    top: 500px;
+    width: 400px;
+    height: 300px;
+    ;
 }
 
 .red {
-    border: 100px solid red;
-    display: inline-block;
+    border: 5px solid black;
+    background-color: red;
     position: absolute;
-    left: 54%;
-    top: 550px;
+    right: 0;
+    top: 95px;
+    width: 100px;
+    height: 100px;
+
 }
 
 .red2 {
-    border: 100px solid red;
-    display: inline-block;
+    border: 5px solid black;
+    background-color: red;
     border-radius: 50%;
     position: fixed;
     right: 0;
     bottom: 0;
+    width: 100px;
+    height: 100px;
 }
 
 p {
     border: 2px solid black;
+    display: block;
 }
