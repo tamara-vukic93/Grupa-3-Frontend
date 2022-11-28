@@ -1,0 +1,16 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    border: 1px solid rgb(183, 0, 255);
+    padding: 10px;
+}
+
+li {
+    background-color: rgb(29, 183, 189);
+    border: 1px solid lightblue;
+    border-radius: 10%;
+    padding: 10px;
+    color: azure;
+}

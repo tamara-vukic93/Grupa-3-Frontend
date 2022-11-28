@@ -1,0 +1,18 @@
+* {
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+p {
+    width: 200px;
+    background-color: rgb(23, 143, 143);
+    color: azure;
+    border-radius: 5%;
+    border: 1px solid rgb(127, 177, 235);
+    padding: 10px;
+}

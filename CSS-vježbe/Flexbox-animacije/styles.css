@@ -1,0 +1,21 @@
+body {
+    background-image: url(./background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(238, 43, 212);
+    margin: 80px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    color: rgb(238, 43, 212);
+}

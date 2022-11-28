@@ -1,0 +1,80 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+
+    /* nekoliko animacija */
+    animation-name: fadein-top, fadein-right, fadein-bottom, fadein-left, fadein-text;
+    animation-duration: 1s, 1s, 1s, 1s, 2s;
+    animation-delay: 0s, 1s, 2s, 3s, 4s;
+    animation-iteration-count: 1, 1, 1, 1, infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein-top {
+    from {
+        border-top-color: white;
+    }
+
+    to {
+        border-top-color: rgb(192, 24, 192);
+    }
+}
+
+
+@keyframes fadein-right {
+    from {
+        border-right-color: white;
+    }
+
+    to {
+        border-right-color: rgb(192, 24, 192);
+    }
+}
+
+@keyframes fadein-bottom {
+    from {
+        border-bottom-color: white;
+    }
+
+    to {
+        border-bottom-color: rgb(192, 24, 192);
+    }
+}
+
+
+@keyframes fadein-left {
+    from {
+        border-left-color: white;
+    }
+
+    to {
+        border-left-color: rgb(192, 24, 192);
+    }
+}
+
+
+@keyframes fadein-text {
+    0% {
+        color: white;
+    }
+
+    30%,
+    60% {
+        color: rgb(192, 24, 192);
+    }
+
+    100% {
+        color: white;
+    }
+}

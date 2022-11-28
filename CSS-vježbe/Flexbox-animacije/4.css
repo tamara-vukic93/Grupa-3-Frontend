@@ -1,0 +1,68 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.deck {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 250px;
+    height: 300px;
+    border: none;
+    padding-top: 100px;
+}
+
+.card {
+    position: absolute;
+    transform-origin: left bottom;
+}
+
+.card:hover {
+    border: 3px solid red;
+    z-index: 100;
+}
+
+.deck:hover .card:nth-child(1) {
+    transform: rotate(-20deg);
+}
+
+.deck:hover .card:nth-child(1):hover {
+    transform: rotate(-20deg) translate(-50px, -50px) scale(1.1, 1.1);
+}
+
+.deck:hover .card:nth-child(2) {
+    transform: rotate(-10deg);
+}
+
+.deck:hover .card:nth-child(2):hover {
+    transform: rotate(-10deg) translate(-20px, -50px) scale(1.1, 1.1);
+}
+
+.deck:hover .card:nth-child(3) {
+    transform: rotate(0deg);
+}
+
+.deck:hover .card:nth-child(3):hover {
+    transform: rotate(0deg) translate(0px, -50px) scale(1.1, 1.1);
+}
+
+.deck:hover .card:nth-child(4) {
+    transform: rotate(10deg);
+}
+
+.deck:hover .card:nth-child(4):hover {
+    transform: rotate(10deg) translate(20px, -50px) scale(1.1, 1.1);
+}
+
+.deck:hover .card:nth-child(5) {
+    transform: rotate(20deg);
+}
+
+.deck:hover .card:nth-child(5):hover {
+    transform: rotate(20deg) translate(50px, -50px) scale(1.1, 1.1);
+}
