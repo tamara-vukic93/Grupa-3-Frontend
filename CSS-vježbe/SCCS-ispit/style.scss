@@ -1,0 +1,64 @@
+@import "base/colors";
+@import "abstract/mixin";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(./multimedia/blur-clean.jpg);
+    @include image;
+}
+
+.main-div {
+    @include display;
+    transform: translate(-50%, -50%);
+
+    div {
+        @include div;
+
+        &:nth-child(1) {
+            background-color: $color1;
+            animation: anim1 1.5s 1 ease-in;
+        }
+
+        &:nth-child(2) {
+            background-color: $color2;
+            animation: anim2 3s 1 ease-in;
+        }
+
+        &:nth-child(3) {
+            background-color: $color3;
+            animation: anim3 4.5s 1 ease-in;
+        }
+    }
+
+}
+
+@keyframes anim1 {
+    from {
+        transform: translate(0px, -1000px);
+    }
+
+    to {}
+}
+
+@keyframes anim2 {
+    from {
+        transform: translate(0px, -1500px);
+    }
+
+    to {}
+}
+
+@keyframes anim3 {
+    from {
+        transform: translate(0px, -2000px);
+    }
+
+    to {}
+}

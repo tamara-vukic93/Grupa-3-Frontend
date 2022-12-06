@@ -1,0 +1,35 @@
+@mixin image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+@mixin display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+    gap: 50px;
+}
+
+@mixin div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10%;
+    width: 50%;
+    height: 70%;
+    color: white;
+    border: 3px solid white;
+    font-size: 100px;
+    font-weight: 800;
+    font-family: Verdana, Tahoma, sans-serif;
+    flex: 1 1 auto;
+}
