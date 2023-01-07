@@ -19,6 +19,7 @@ body {
     color: black;
 }
 
-.visible {
-    visibility: hidden;
+.on-click {
+    display: block;
+    background: red;
 }
