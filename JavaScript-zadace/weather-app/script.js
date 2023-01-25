@@ -17,7 +17,7 @@ const handleSearch = () => {
         return;
     }
     // napravi url za taj grad
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=hr&units=metric`;
     // dohvati vrijeme
     const request = new XMLHttpRequest();
     request.open('GET', url, true);
@@ -36,12 +36,12 @@ const handleSearch = () => {
 
             h1City.innerText = city;
             imgIcon.src = `${iconUrl}`;
-            divTemp.innerHTML = `Temperature is: ${temperature.toFixed()} &#8451;`;
-            divClouds.innerHTML = `Clouds: ${clouds}%`;
-            divHumidity.innerHTML = `Humidity: ${humidity}%`;
-            divWind.innerHTML = `Wind: ${wind} m/s`;
-            divPressure.innerHTML = `Pressure: ${pressure}hPa`;
-            divWeather.innerHTML = `Weather: ${weather}`;
+            divTemp.innerHTML = `Temperatura je: ${temperature.toFixed()} &#8451;`;
+            divClouds.innerHTML = `Oblaci: ${clouds}%`;
+            divHumidity.innerHTML = `Vlažnost: ${humidity}%`;
+            divWind.innerHTML = `Vjetar: ${wind} m/s`;
+            divPressure.innerHTML = `Tlak zraka: ${pressure}hPa`;
+            divWeather.innerHTML = `Vrijeme: ${weather}`;
         } else if (request.status >= 400 && request.status < 500) {
             h1City.innerText = `${city} nije nađen`;
             divTemp.innerHTML = '';
