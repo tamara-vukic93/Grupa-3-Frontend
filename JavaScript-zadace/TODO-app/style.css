@@ -1,0 +1,27 @@
+* {
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.striked {
+    text-decoration: line-through;
+}
+
+span {
+    margin: 10px;
+}
