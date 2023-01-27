@@ -10,6 +10,17 @@ const divWind = document.getElementById('wind');
 const divWeather = document.getElementById('vrijeme');
 const imgIcon = document.getElementById('icon');
 
+const clearField = () => {
+    h1City.innerText = '';
+    imgIcon.src = '';
+    divTemp.innerHTML = '';
+    divClouds.innerHTML = '';
+    divHumidity.innerHTML = '';
+    divWind.innerHTML = '';
+    divPressure.innerHTML = '';
+    divWeather.innerHTML = '';
+}
+
 const handleSearch = () => {
     // Procitaj input -> koji je grad
     const city = input.value.trim();
@@ -37,15 +48,16 @@ const handleSearch = () => {
             h1City.innerText = city;
             imgIcon.src = `${iconUrl}`;
             divTemp.innerHTML = `Temperatura je: ${temperature.toFixed()} &#8451;`;
-            divClouds.innerHTML = `Oblaci: ${clouds}%`;
-            divHumidity.innerHTML = `Vlažnost: ${humidity}%`;
+            divClouds.innerHTML = `Oblaci: ${clouds} %`;
+            divHumidity.innerHTML = `Vlažnost: ${humidity} %`;
             divWind.innerHTML = `Vjetar: ${wind} m/s`;
-            divPressure.innerHTML = `Tlak zraka: ${pressure}hPa`;
+            divPressure.innerHTML = `Tlak zraka: ${pressure} hPa`;
             divWeather.innerHTML = `Vrijeme: ${weather}`;
         } else if (request.status >= 400 && request.status < 500) {
+            clearField();
             h1City.innerText = `${city} nije nađen`;
-            divTemp.innerHTML = '';
         } else {
+            clearField();
             h1City.innerText = `Dogodila se greška. Pokušajte opet.`;
         }
         input.value = '';
